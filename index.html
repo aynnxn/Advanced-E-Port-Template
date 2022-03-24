@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayman Bolad</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="/assets/oldlogo.png" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+  (function() {
+  emailjs.init("cANbpBZ9mE3dVjWhb");
+  })();
+  </script>
+  </script>
+</head>
+
+<body>
+  <section id="landing-page" onmousemove="moveBackground(event)">
+    <nav>
+      <figure>
+        <img id="personal-logo" src="./assets/oldlogo.png" alt="">
+      </figure>
+      <ul class="nav__link--list">
+        <li class="nav__link" onclick="toggleModal()">
+          <a href="#" class="
+            nav__link--anchor
+            link__hover-effect
+            link__hover-effect--black
+          ">About</a>
+        </li>
+        <li class="nav__link">
+          <a href="#projects" class="
+            nav__link--anchor
+            link__hover-effect
+            link__hover-effect--black
+          ">Projects</a>
+        </li>
+        <li class="nav__link" onclick="toggleModal()">
+          <a href="#" class="
+            nav__link--anchor
+            link__hover-effect
+            link__hover-effect--black
+          ">Contact</a>
+        </li>
+        <li class="nav__link click" onclick="toggleContrast()">
+          <a href="#" class="
+            nav__link--anchor
+            link__hover-effect
+            link__hover-effect--black
+          "><i class="fas fa-adjust"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <header class="header">
+      <div class="header__content">
+        <h3 class="header__description">Hello, I'm</h3>
+        <h1 class="title gold">Ayman</h1>
+        <p class="header__para">
+          I'm an <b class="gold">aspiring Technical Project Manager</b> with a strong passion for building technology to ensure that underrepresented communities and voices are served and heard.
+          <br>
+          Here's a bit more <b class="gold click" onclick="toggleModal()">about me</b>.
+        </p>
+        <div class="social__list">
+          <a href="https://github.com/aynnxn" target="_blank" class="social__link--gold click">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/aymanbolad/" target="_blank" class="social__link--gold click">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://twitter.com/aynnxn" target="_blank" class="social__link--gold click">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+    <a href="#">
+      <button class="mail__btn click" onclick="toggleModal()">
+        <i class="fas fa-envelope"></i>
+      </button>
+    </a>
+    <a href="#projects" class="scroll">
+      <div class="scroll__icon click"></div>
+    </a>
+    <div class="modal">
+      <div class="modal__half modal__about">
+        <h3 class="modal__title modal__title--about">Here's a bit about me.</h3>
+        <h4 class="modal__sub-title modal__sub-title--about">Self Taught Frontend Software Engineer.</h4>
+        <p class="modal__para">
+          I'm a sophomore at Indiana University double majoring in <b class="gold">Information Systems</b> and <b class="gold">Informatics</b> with concentrations in <b class="gold">Application Development</b> and <b class="gold">Web-Development</b>. 
+          <br>
+          <br>
+          My interests in Tech have led me to become a <b class="gold">self studying</b> developer, leveraging technologies such as <b class="gold">Javascript</b> and <b class="gold">Python</b>.
+          I'm currently working on expanding my domain, using <b class="gold">React</b>, <b class="gold">TypeScript</b>, <b class="gold">Node.js</b>, and <b
+            class="gold">Express</b>.
+        </p>
+        <div class="modal__languages">
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png"
+              alt="">
+            <span class="language__name">JavaScript</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img"
+              src="https://cdn.iconscout.com/icon/free/png-256/typescript-3521774-2945272.png" alt="">
+            <span class="language__name">TypeScript</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img"
+              src="https://www.freepngimg.com/download/android/72537-icons-python-programming-computer-social-tutorial.png"
+              alt="">
+            <span class="language__name">Python</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://4.bp.blogspot.com/-Fxo_qnGJBj0/WRoDPNdlEII/AAAAAAAABF0/1mSHmv5gleQaCsHKEDgTB3DbNghjCXvZACLcB/s1600/logo_firebase_1920px_clr.png"
+              alt="">
+            <span class="language__name">Firebase</span>
+          </figure>
+
+          <figure class="modal__language">
+            <img class="modal__language--img"
+              src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.thedudek.com%2Fassets%2Ficons%2Fmongodb-logo.png&f=1&nofb=1"
+              alt="">
+            <span class="language__name">MongoDB</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fvectorified.com%2Fimages%2Fexpress-js-icon-20.png&f=1&nofb=1" alt="">
+            <span class="language__name">Express</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png"
+              alt="">
+            <span class="language__name">React</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img"
+              src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpluspng.com%2Fimg-png%2Fnodejs-png--400.png&f=1&nofb=1" alt="">
+            <span class="language__name">Node.js</span>
+          </figure>
+        </div>
+      </div>
+      <div class="modal__half modal__contact">
+        <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+        <h3 class="modal__title modal__title--contact">
+          Let's have a chat!
+        </h3>
+        <h3 class="modal__sub-title modal__sub-title--contact">
+          I'm always open to new opportunities.
+        </h3>
+        <form id="contact__form" onsubmit="contact(event)">
+          <div class="form__item">
+            <label class="form__item--label">Name</label>
+            <input class="input" name="user_name" type="text" required></input>
+          </div>
+          <div class="form__item">
+            <label class="form__item--label">Email</label>
+            <input class="input" name="user_email" type="email" required></input>
+          </div>
+          <div class="form__item">
+            <label class="form__item--label">Message</label>
+            <textarea class="input" name="message" type="text" required></textarea>
+          </div>
+          <button id="contact__submit" class="form__submit--gold">
+            Send it my way!
+          </button>
+        </form>
+        <div class="modal__overlay modal__overlay--loading">
+          <i class="fas fa-spinner"></i>
+        </div>
+        <div class="modal__overlay modal__overlay--success">
+          Thanks for the message! I'll get back to you as soon as possible.
+        </div>
+      </div>
+    </div>
+    <img src="./assets/semi circle.svg" class="shape shape--0">
+    <img src="./assets/circle.svg" class="shape shape--1">
+    <img src="./assets/squiggly.svg" class="shape shape--2">
+    <img src="./assets/circle.svg" class="shape shape--3">
+    <img src="./assets/triangle.svg" class="shape shape--4">
+    <img src="./assets/circle.svg" class="shape shape--5">
+    <img src="./assets/squiggly.svg" class="shape shape--6">
+    <img src="./assets/circle.svg" class="shape shape--7">
+    <img src="./assets/semi circle.svg" class="shape shape--8">
+  </section>
+  <section id="projects">
+    <div class="container">
+      <div class="row">
+        <h1 class="section__title">
+          Here are some of my <span class="gold">projects</span>
+        </h1>
+        <ul class="project__list">
+          <li class="project">
+            <div class="project__wrapper">
+              <img src="./assets/blurbackground.jpg" class="project__img" alt="">
+              <div class="project__wrapper--bg"></div>
+              <div class="project__description">
+                <h3 class="project__description--title">
+                  Coming Soon! :)
+                </h3>
+                <h4 class="project__description--sub-title">
+                  I'll list the technology used here. 
+                </h4>
+                <p class="project__description--para">
+                  And then I'll describe the project here.
+                </p>
+                <div class="project__description--links">
+                  <a href="https://aymanbolad.com/" class="project__description--link">
+                    <i class="fas fa-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="project">
+            <div class="project__wrapper">
+              <img src="./assets/blurbackground.jpg" class="project__img" alt="">
+              <div class="project__wrapper--bg"></div>
+              <div class="project__description">
+                <h3 class="project__description--title">
+                  Coming Soon! :)
+                </h3>
+                <h4 class="project__description--sub-title">
+                  I'll list the technology used here.
+                </h4>
+                <p class="project__description--para">
+                  And then I'll describe the project here.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="project">
+            <div class="project__wrapper">
+              <img src="./assets/blurbackground.jpg" class="project__img" alt="">
+              <div class="project__wrapper--bg"></div>
+              <div class="project__description">
+                <h3 class="project__description--title">
+                  Coming Soon! :)
+                </h3>
+                <h4 class="project__description--sub-title">
+                  I'll list the technology used here.
+                </h4>
+                <p class="project__description--para">
+                  And then I'll describe the project here.
+                </p>
+                <div class="project__description--links">
+                  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"_blank"
+                    class="project__description--link">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                  <a href="https://github.com/ayynxn" target="_blank"
+                    class="project__description--link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="https://aymanbolad.com/" target="_blank" class="project__description--link">
+                    <i class="fas fa-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="row footer__row">
+        <a href="#" class="footer__anchor">
+          <figure class="footer__logo">
+            <img src="./assets/oldlogo.png" class="footer__logo--img" alt="">
+          </figure>
+          <span class="footer__logo--popper">
+            Top
+            <i class="fas fa-arrow-up"></i>
+          </span>
+        </a>
+        <div class="footer__social--list">
+          <a href="https://github.com/aynnxn" class="
+          footer__social--link
+          link__hover-effect
+          link__hover-effect--white
+        ">
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/aymanbolad" target="_blank" class="
+          footer__social--link
+          link__hover-effect
+          link__hover-effect--white
+        ">
+            LinkedIn
+          </a>
+          <a href="https://twitter.com/aynnxn" target="_blank" class="
+          footer__social--link
+          link__hover-effect
+          link__hover-effect--white
+        ">
+            Twitter
+          </a>
+          <a href="#" onclick="toggleModal()" class="
+          footer__social--link
+          link__hover-effect
+          link__hover-effect--white
+        ">
+            Contact
+          </a>
+        </div>
+        <div class="footer__copyright">Copyright &copy; 2022 Ayman Bolad</div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
